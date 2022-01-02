@@ -1,0 +1,12 @@
+.related_book_list {
+  height: 370px !important;
+}
+.related_items p {
+  font-size: 14px;
+}
+.related_items img {
+  height: 200px !important;
+}
+.related_add_to_card {
+  /* top: 35% !important; */
+}

@@ -1,0 +1,16 @@
+.rating_icon,
+.ratings i {
+  font-size: 14px;
+  margin-right: 5px;
+  color: #ff9900;
+}
+.write_review {
+  background-color: #fff;
+}
+.write_review textarea {
+  border: none;
+  outline: none;
+  max-width: 100%;
+  width: 100%;
+  resize: none;
+}

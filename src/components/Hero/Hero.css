@@ -1,0 +1,70 @@
+  
+.hover_login{
+  /* display:flex; */
+  justify-content: center;
+   
+}
+.input_area {
+  padding: 10px;
+  border-radius: 0px solid gray !important;
+}
+.search_input {
+  max-width: 80%;
+  width: 900px;
+}
+
+.login_after_hover {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  /* display: none; */
+  cursor: pointer;
+}
+.logo img {
+  width: 150px;
+}
+.login_box {
+  background-color: #fff;
+  width: 304px;
+  transition: 8s;
+}
+
+.login_box img {
+  width: 20px;
+  margin-right: 5px;
+}
+.facebook,
+.google {
+  cursor: pointer;
+  margin: auto;
+}
+.login_input_area {
+  width: 100%;
+  text-align: center;
+}
+.login_input_area input {
+  /* border: none; */
+  outline: none;
+  margin-top: 10px;
+  padding: 10px 5px;
+  width: 90%;
+}
+
+.login_btn {
+  border: none;
+  outline: none;
+  width: 80%;
+  padding: 10px 5px;
+  background: #33c24d;
+}
+.hover_login {
+  position: relative;
+}
+.login_after_hover {
+  position: absolute;
+  display: none;
+}
+.hover_login:hover .login_after_hover {
+  display: block;
+  background-color: red;
+}

@@ -1,0 +1,7 @@
+.my_desing_navbar ul {
+  display: flex;
+  justify-content: space-between;
+}
+.my_desing_navbar a {
+  font-size: 18px;
+}

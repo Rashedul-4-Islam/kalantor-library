@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Hind Siliguri", sans-serif;
+}
+body {
+  background-color: #f1f2f4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black !important;
+}
+img {
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.custom_btn {
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  font-size: 18px;
+  background-color: #2488b0;
+  color: #fff;
+  margin-right: 10px;
+  margin-top: 10px;
+  transition: 0.8s;
+}
+.custom_btn:hover {
+  background-color: #1babe4;
+}
+.custom_btn_outline {
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  border: 1px solid #2488b0;
+  background-color: transparent;
+  font-size: 18px;
+  color: #fff;
+  margin-right: 10px;
+  margin-top: 10px;
+  transition: 0.8s;
+}
+.custom_btn_outline:hover {
+  background-color: #2488b0;
+  color: #fff !important;
+}
+button {
+  color: black !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stock {
+  color: #33c24d;
 }

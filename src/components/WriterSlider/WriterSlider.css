@@ -1,0 +1,7 @@
+.writer img {
+  border-radius: 50%;
+  /* box-shadow: 2px 2px 5px gray; */
+  border: 1px solid #0397d3;
+  width: 150px;
+  height: 150px;
+}

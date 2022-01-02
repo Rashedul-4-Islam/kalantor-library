@@ -1,0 +1,14 @@
+.subject {
+  border: 1px solid #0397d3;
+  background-color: #fff;
+  display: inline-block;
+  padding: 0px 60px;
+  line-height: 30px;
+  padding-top: 10px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.subject:hover {
+  background-color: #0077a3b9;
+  color: #fff;
+}

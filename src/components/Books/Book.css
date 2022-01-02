@@ -1,0 +1,56 @@
+.book_list img {
+  /* width: 100%; */
+  height: 230px !important;
+  padding: 2px;
+}
+.book_list {
+  /* border: 1px solid red; */
+  margin: 5px 0;
+  transition: 0.9s;
+  position: relative;
+  height: 405px !important;
+}
+.book_list:hover {
+  /* background-color: green; */
+  box-shadow: inset 0px 0px 7px gray;
+}
+
+.add_to_cart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  display: none;
+}
+.book_list:hover .add_to_cart {
+  display: block;
+}
+.add_to_cart h6 {
+  background: #2488b0;
+  padding: 10px 0;
+  /* opacity: 0.8; */
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.view_details {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #2488b0;
+  padding: 10px 0;
+  color: #fff;
+  display: none;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.book_list:hover .view_details {
+  display: block;
+}
+.book_list:hover .view_details a {
+  color: #fff;
+}
