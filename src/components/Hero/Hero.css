@@ -2,14 +2,14 @@
   /* display:flex; */
   justify-content: center;
 }
-.input_area {
+/* .input_area {
   padding: 10px;
   border-radius: 0px solid gray !important;
-}
-.search_input {
+} */
+/* .search_input {
   max-width: 80%;
   width: 900px;
-}
+} */
 
 .login_after_hover {
   margin: auto;
@@ -40,13 +40,13 @@
   width: 100%;
   text-align: center;
 }
-.login_input_area input {
-  /* border: none; */
-  outline: none;
+/* .login_input_area input { */
+/* border: none; */
+/* outline: none;
   margin-top: 10px;
   padding: 10px 5px;
   width: 90%;
-}
+} */
 
 .login_btn {
   border: none;
@@ -67,7 +67,7 @@
   background-color: red;
 }
 .searchInputs {
-  margin-top: 105px;
+  margin-top: 40px;
   display: flex;
 }
 
@@ -79,12 +79,12 @@
   border-bottom-right-radius: 0px;
   font-size: 18px;
   padding: 15px;
-  height: 30px;
+  height: 50px;
   width: 300px;
 }
 
 .searchIcon {
-  height: 60px;
+  height: 50px;
   width: 50px;
   background-color: white;
   display: grid;

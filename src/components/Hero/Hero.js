@@ -36,64 +36,61 @@ const Hero = ({ placeholder, data }) => {
           <img src={Logo} alt="" />
         </div>
         <div className="search_input">
-          <form>
-            <div className="m-auto">
-              <label
+
+              {/* <label
                 className="visually-hidden"
                 htmlFor="inlineFormInputGroupUsername"
               >
                 Username
-              </label>
+              </label> */}
               {/* you need work here some reponsive 
               below  i just copy my code*/}
 
 
               <div className="search">
-
-
-      <div className="searchInputs">
-        <input
-          type="text"
-          placeholder={placeholder}
-          value={wordEntered}
-          onChange={handleFilter}
-        />
-        <div className="searchIcon">
-          {filteredData.length === 0 ? (
-            <SearchIcon />
-          ) : (
-            <CloseIcon
-             id="clearBtn" onClick={clearInput} />
-          )}
-        </div>
-      </div>
-      {filteredData.length !== 0 && (
-        <div className="dataResult">
-          {filteredData.slice(0, 15).map((value, key) => {
-            return (
-              <a className="dataItem" href={value.link} target="_blank" rel='noreferrer'>
-                <p>{value.author} </p>
-              </a>
-            );
-          })}
-        </div>
-      )}
-    </div>
-              {/* <div className="input-group">
-                <input
+                <div className="searchInputs">
+                  <input
+                    type="text"
+                    placeholder={placeholder}
+                    value={wordEntered}
+                    onChange={handleFilter}
+                  />
+                  <div className="searchIcon">
+                    {filteredData.length === 0 ? (
+                      <SearchIcon />
+                    ) : (
+                      <CloseIcon
+                      id="clearBtn" onClick={clearInput} />
+                    )}
+                  </div>
+                </div>
+                    {filteredData.length !== 0 && (
+                  <div className="dataResult">
+                    {filteredData.slice(0, 15).map((value, key) => {
+                      return (
+                        <a className="dataItem" href={value.link} target="_blank" rel='noreferrer'>
+                          <p>{value.author} </p>
+                        </a>
+                      );
+                    })}
+                  </div>
+                  )}
+    
+                    {/* <div className="input-group">
+                    <input
                   type="text"
                   className="form-control input_area"
                   id="inlineFormInputGroupUsername"
                   placeholder={placeholder}
-                />
-                <div className="input-group-text">
+                    />
+                     <div className="input-group-text">
                   <div className="icon">Search</div>
-                </div>
-              </div> */}
-            </div>
-          </form>
-        </div>
-        <div className="login">
+                    </div>
+                    </div> */}
+              </div>
+      
+           </div>
+           <div className="login">
           <div className="hover_login">
             <i className="fas fa-cart-plus  fs-5 me-2 me-4 addToCard"></i>
             <button className="btn border ">Login</button>
