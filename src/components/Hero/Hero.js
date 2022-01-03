@@ -1,11 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Hero.css";
-
 import Logo from "../../Images/logo/Namlipi.png";
 import google from "../../Images/logo/google.png";
 import facebook from "../../Images/logo/facebook.jpg";
+import SearchIcon from '@mui/icons-material/Search';
+import CloseIcon from '@mui/icons-material/Close';
 
-const Hero = () => {
+const Hero = ({ placeholder, data }) => {
+  const [filteredData, setFilteredData] = useState([]);
+  const [wordEntered, setWordEntered] = useState("");
+  console.log(data)
+  const handleFilter = e => {
+    const searchWord = e.target.value;
+    setWordEntered(searchWord);
+    const newFilter = data.filter((value) => {
+      return value.title.toLowerCase().includes(searchWord.toLowerCase());
+    });
+
+    if (searchWord === "") {
+      setFilteredData([]);
+    } else {
+      setFilteredData(newFilter);
+    }
+  };
+
+  const clearInput = () => {
+    setFilteredData([]);
+    setWordEntered("");
+  };
+  
   return (
     <div className="container mt-3">
       <div className="d-flex justify-content-between align-items-center">
@@ -21,17 +44,52 @@ const Hero = () => {
               >
                 Username
               </label>
-              <div className="input-group">
+              {/* you need work here some reponsive 
+              below  i just copy my code*/}
+
+
+              <div className="search">
+
+
+      <div className="searchInputs">
+        <input
+          type="text"
+          placeholder={placeholder}
+          value={wordEntered}
+          onChange={handleFilter}
+        />
+        <div className="searchIcon">
+          {filteredData.length === 0 ? (
+            <SearchIcon />
+          ) : (
+            <CloseIcon
+             id="clearBtn" onClick={clearInput} />
+          )}
+        </div>
+      </div>
+      {filteredData.length !== 0 && (
+        <div className="dataResult">
+          {filteredData.slice(0, 15).map((value, key) => {
+            return (
+              <a className="dataItem" href={value.link} target="_blank" rel='noreferrer'>
+                <p>{value.author} </p>
+              </a>
+            );
+          })}
+        </div>
+      )}
+    </div>
+              {/* <div className="input-group">
                 <input
                   type="text"
                   className="form-control input_area"
                   id="inlineFormInputGroupUsername"
-                  placeholder="Username"
+                  placeholder={placeholder}
                 />
                 <div className="input-group-text">
                   <div className="icon">Search</div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </form>
         </div>
